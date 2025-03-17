@@ -1,6 +1,4 @@
-Oh, baik! Saya akan menyertakan penjelasan lebih lanjut mengenai metode HTTP seperti GET, POST, PUT, dan DELETE yang digunakan di aplikasi Anda, berikut update pada `README.md`:
 
-```markdown
 # Aplikasi Pengelolaan Buku - LumineReads
 
 ## Deskripsi
@@ -49,7 +47,7 @@ Aplikasi ini menggunakan **Google Books API** untuk mencari buku berdasarkan kat
        }
      ]
    }
-   ```
+
 
 ## Penjelasan Aplikasi
 
@@ -159,4 +157,3 @@ Aplikasi ini menggunakan **Google Books API** untuk mencari buku berdasarkan kat
 3. **PUT**: Digunakan untuk memperbarui data buku yang sudah ada (misalnya mengedit judul, penulis, tahun terbit).
 4. **DELETE**: Digunakan untuk menghapus buku dari daftar.
 
-Dengan pembaruan ini, `README.md` mencakup penjelasan tentang metode HTTP yang digunakan dalam aplikasi, serta cara setiap operasi dilakukan (GET, POST, PUT, DELETE).
