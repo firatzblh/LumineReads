@@ -1,0 +1,240 @@
+/* Gaya Umum */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #f8d7e1, #f1a7c3); /* Background pink lembut */
+  color: #444; /* Warna teks yang lebih gelap agar kontras dengan latar belakang */
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+/* Header & Navigasi */
+header {
+  background: rgba(255, 255, 255, 0.8); /* Putih transparan dengan sedikit bayangan */
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Bayangan halus */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: #d04c79; /* Warna merah muda lembut untuk logo */
+  letter-spacing: 2px;
+}
+
+.logo img {
+  width: 75px; /* Ukuran logo */
+  height: auto;
+  margin-right: 10px;
+}
+
+/* Navigasi */
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #555; /* Warna teks lebih gelap agar mudah dibaca */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #d04c79; /* Hover dengan warna merah muda lembut */
+}
+
+/* Section */
+.section {
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.9); /* Putih lembut untuk section */
+  border-radius: 10px;
+  margin: 20px auto;
+  width: 80%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8); /* Putih transparan */
+  border-radius: 10px;
+}
+
+input {
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  width: 80%;
+  font-size: 16px;
+  text-align: center;
+  background-color: #f1d2e6; /* Background input dengan warna pink lembut */
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #d04c79; /* Fokus input dengan warna pink lembut */
+}
+
+/* Tombol */
+button {
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: none;
+  background: #d04c79; /* Tombol dengan warna pink lembut */
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.2s ease-in-out;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #d07894; /* Hover dengan warna pink lebih gelap */
+  transform: scale(1.05);
+}
+
+.book-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  padding: 20px;
+  min-height: 300px; /* Sesuaikan dengan kebutuhan */
+}
+
+.book-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+  height: 60px; /* Membuat tinggi tetap agar teks tidak meluber */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.book-card .description {
+  font-size: 14px;
+  color: #666;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.book-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.book-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  padding: 15px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Pastikan teks di tengah */
+}
+.book-card img {
+  width: 150px; /* Ukuran gambar yang lebih teratur */
+  height: 220px; /* Menjaga proporsi gambar */
+  object-fit: cover; /* Menjaga gambar agar tetap proporsional */
+  border-radius: 8px;
+  margin-bottom: 15px; /* Memberi jarak antara gambar dan judul */
+}
+/* Fitur List */
+.features-list {
+  text-align: left;
+  display: inline-block;
+}
+
+.features-list li {
+  font-size: 16px;
+  padding: 5px 0;
+  color: #444;
+}
+
+/* Footer */
+footer {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  color: #fff;
+  font-size: 14px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Gambar di dalam book-card */
+.book-cover {
+  width: 120px; 
+  height: 180px;
+  object-fit: cover;
+  border-radius: 5px;
+  display: block;
+}
+
+/* Notifikasi */
+.notification {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #28a745;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  font-size: 16px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.notification.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Notifikasi Error */
+.notification-error {
+  background-color: #dc3545;
+  visibility: visible;
+}
+
+/* Spinner */
+.spinner {
+  border: 4px solid #f3f3f3; 
+  border-top: 4px solid #d04c79; /* Pink lembut */
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

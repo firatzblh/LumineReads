@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LumineReads - Pencarian Buku</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+      <div class="logo">
+         <img src="logo.png" alt="Logo" class="logo-img">
+         LumineReads
+       </div>
+        <nav>
+            <ul>
+                <li><a href="#search">Pencarian</a></li>
+                <li><a href="#added-books">Daftar Buku</a></li>
+                <li><a href="#favorites">Favorit</a></li>
+                <li><a href="#add-book">Tambah Buku</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Pencarian Buku -->
+        <section id="search" class="section">
+            <h2>📚 Pencarian Buku</h2>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Cari buku...">
+                <button type="button" id="searchButton">🔍 Cari</button>
+            </div>
+            <div id="bookList" class="book-container"></div>
+        </section>
+
+        <!-- Daftar Buku -->
+        <section id="added-books" class="section">
+            <h2>📖 Daftar Buku</h2>
+            <div id="addedBooksList" class="book-container"></div>
+        </section>
+
+        <!-- Favorit -->
+        <section id="favorites" class="section">
+            <h2>❤️ Favorit</h2>
+            <div id="favoritesList" class="book-container"></div>
+        </section>
+
+        <!-- Tambahkan Buku -->
+        <section id="add-book" class="section">
+            <h2>➕ Tambahkan Buku</h2>
+            <form id="addBookForm" class="form-container">
+                <input type="text" id="bookTitle" placeholder="Judul Buku" required>
+                <input type="text" id="bookAuthor" placeholder="Penulis" required>
+                <input type="number" id="bookYear" placeholder="Tahun Terbit" required>
+                <input type="url" id="bookCover" placeholder="URL Gambar" required>
+                <button type="submit">✅ Tambah</button>
+            </form>
+        </section>
+
+        <!-- Edit Buku -->
+        <section id="edit-book" class="section hidden">
+            <h2>✏️ Edit Buku</h2>
+            <form id="editBookForm" class="form-container">
+                <input type="text" id="editTitle" placeholder="Judul Buku" required>
+                <input type="text" id="editAuthor" placeholder="Penulis" required>
+                <input type="number" id="editYear" placeholder="Tahun Terbit" required>
+                <input type="url" id="editCover" placeholder="URL Gambar" required>
+                <button type="button" id="editSubmit">💾 Simpan</button>
+                <button type="button" id="cancelEdit">❌ Batal</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 LumineReads - Temukan & Simpan Buku Favoritmu</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
