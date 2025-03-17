@@ -13,8 +13,8 @@ LumineReads adalah aplikasi berbasis web untuk mencari, menambah, mengedit, dan 
 
 ## Link Github
 Sumber kode aplikasi ini dapat ditemukan di repository GitHub:
-[GitHub Repository - Aplikasi Pengelolaan Buku](https://github.com/username/repository)  
-*Gantilah `username/repository` dengan username dan nama repository yang sesuai.*
+https://firatzblh.github.io/LumineReads/
+https://github.com/firatzblh/LumineReads
 
 ## API Public yang Digunakan
 
